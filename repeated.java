@@ -23,14 +23,7 @@ import java.io.*;
 			}
 		}
 
-        // for (int i = 0 ; i< n ; i++){
-        //     if (arr[i] == arr[i+1]){
-        //         int repeatingNumber = arr[i];
-        //         return ;
-        //     }
-
-        //     if (arr[i] - arr)
-        // }
+        
 
 		System.out.println("The repeating number is "
 						+ repeatingNumber + ".");
