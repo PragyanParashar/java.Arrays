@@ -4,21 +4,19 @@ import java.io.*;
 
 	static void printTwoElements(int[] arr, int n)
 	{
-		int[] temp
-			= new int[n]; // Creating temp array of size n
-						// with initial values as 0.
-		int repeatingNumber = -1;
-		int missingNumber = -1;
+		int[] temp = new int[n]; 
+		int repeating = -1;
+		int missing = -1;
 
 		for (int i = 0; i < n; i++) {
 			temp[arr[i] - 1]++;
 			if (temp[arr[i] - 1] > 1) {
-				repeatingNumber = arr[i];
+				repeating = arr[i];
 			}
 		}
 		for (int i = 0; i < n; i++) {
 			if (temp[i] == 0) {
-				missingNumber = i + 1;
+				missing = i + 1;
 				break;
 			}
 		}
@@ -26,9 +24,9 @@ import java.io.*;
         
 
 		System.out.println("The repeating number is "
-						+ repeatingNumber + ".");
+						+ repeating + ".");
 		System.out.println("The missing number is "
-						+ missingNumber + ".");
+						+ missing + ".");
 	}
 
 	public static void main(String[] args)
@@ -39,4 +37,4 @@ import java.io.*;
 	}
 }
 
-// This code is contributed by vivek1208
+
